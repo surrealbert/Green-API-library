@@ -23,7 +23,6 @@ public class WSP_API
         public DateTime timestamp { get; set; }
         public string path { get; set; }
         public string message { get; set; }
-    
     }
 
     public async Task Send_WSP_msg(HttpClient client, string numero, string mensaje)
