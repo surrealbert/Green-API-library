@@ -12,14 +12,17 @@ namespace Green_API_library
             System.Net.ServicePointManager.SecurityProtocol = System.Net.SecurityProtocolType.Tls12;
 
             //Data
-            string idInstance = "*****";
-            string apiTokenInstance = "*****";
-            string waNumber = "*****";
+            string idInstance = "*****"; //Write your instance ID
+            string apiTokenInstance = "*****"; //Write your instance token
+            string waNumber = "*****"; //Write whatsapp number
 
             //Send a test message
-            HttpClient client = new HttpClient();
-            WSP_API wsp_request = new WSP_API(idInstance, apiTokenInstance);
-            await wsp_request.Send_WSP_msg(client, waNumber, "Test Message");
+            //1) Create an HTTP client object
+            //2) Create a WSP_API object
+
+            HttpClient HTTPclient = new HttpClient();
+            WSP_API TestRequest = new WSP_API(idInstance, apiTokenInstance);
+            await TestRequest.SendWspMessage(HTTPclient, waNumber, "Test Message");
         }
     }
 }

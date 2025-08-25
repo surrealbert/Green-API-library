@@ -57,11 +57,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Windows Libraries\\Desktop\\Green-API library\\Green-API library.csproj",
+      "projectUniqueName": "D:\\Windows Libraries\\Desktop\\Programas para github\\Green-API library VS\\Green-API library.csproj",
       "projectName": "Green-API library",
-      "projectPath": "D:\\Windows Libraries\\Desktop\\Green-API library\\Green-API library.csproj",
+      "projectPath": "D:\\Windows Libraries\\Desktop\\Programas para github\\Green-API library VS\\Green-API library.csproj",
       "packagesPath": "C:\\Users\\Bordado\\.nuget\\packages\\",
-      "outputPath": "D:\\Windows Libraries\\Desktop\\Green-API library\\obj\\",
+      "outputPath": "D:\\Windows Libraries\\Desktop\\Programas para github\\Green-API library VS\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -80,6 +80,7 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "projectReferences": {}
         }
       },
@@ -91,6 +92,7 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
+        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Newtonsoft.Json": {
             "target": "Package",

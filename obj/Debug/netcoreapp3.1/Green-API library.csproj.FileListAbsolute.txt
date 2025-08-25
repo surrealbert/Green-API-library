@@ -13,3 +13,18 @@ D:\Windows Libraries\Desktop\Green-API library\obj\Debug\netcoreapp3.1\Green-API
 D:\Windows Libraries\Desktop\Green-API library\obj\Debug\netcoreapp3.1\Green-API library.genruntimeconfig.cache
 D:\Windows Libraries\Desktop\Green-API library\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 D:\Windows Libraries\Desktop\Green-API library\obj\Debug\netcoreapp3.1\Green-API library.csproj.CopyComplete
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.exe
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.deps.json
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.runtimeconfig.json
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.runtimeconfig.dev.json
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.dll
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Green-API library.pdb
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.csproj.AssemblyReference.cache
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.AssemblyInfoInputs.cache
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.AssemblyInfo.cs
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.csproj.CoreCompileInputs.cache
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.csproj.CopyComplete
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.dll
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.pdb
+D:\Windows Libraries\Desktop\Programas para github\Green-API library VS\obj\Debug\netcoreapp3.1\Green-API library.genruntimeconfig.cache

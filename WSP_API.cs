@@ -17,6 +17,7 @@ public class WSP_API
     }
 
     // Clase que define el formato JSON de los comandos para utilizar el API de Whatsapp
+    // This class recieves the JSON format for WSP_API command execution
     public class Wsp_JSON
     {
         public int statusCode { get; set; }
@@ -25,7 +26,7 @@ public class WSP_API
         public string message { get; set; }
     }
 
-    public async Task Send_WSP_msg(HttpClient client, string numero, string mensaje)
+    public async Task SendWspMessage(HttpClient client, string numero, string mensaje)
     {
         HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://api.greenapi.com/waInstance" + this.IdInstance + "/sendMessage/" + this.apiTokenInstance);
         //request.Headers.Add("Authorization", "Bearer " + apiTokenInstance);
@@ -35,24 +36,24 @@ public class WSP_API
             "\"message\": \"" + mensaje + "\"" +
             "}");
 
-        string message_response = await WSP_API_request(client, request);
+        string message_response = await SendApiRequest(client, request);
         Console.WriteLine(message_response);
         Wsp_JSON online_status = JsonConvert.DeserializeObject<Wsp_JSON>(message_response.ToString());
     }
 
-    public async Task<string> Upload_WSP_file(HttpClient client, string filepath, string file_type)
+    public async Task<string> UploadFile(HttpClient client, string filepath, string file_type)
     {
         //file_type = "image/jpeg" para imagenes y "application/pdf" para PDF
         HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://api.green-api.com/waInstance" + this.IdInstance + "/uploadFile/" + this.apiTokenInstance);
         byte[] fileContent = File.ReadAllBytes(filepath);
         request.Content = new ByteArrayContent(fileContent);
         request.Content.Headers.ContentType = new MediaTypeHeaderValue(file_type);
-        string message_response = await WSP_API_request(client, request);
+        string message_response = await SendApiRequest(client, request);
 
         return message_response;
     }
 
-    public async Task Send_WSP_file(HttpClient client, string numero, string image_url, string file_name, string file_format)
+    public async Task SendFile(HttpClient client, string numero, string image_url, string file_name, string file_format)
     {
         //Construye el HTTP request con el enlace y los headers tal como el comando CURL
         HttpRequestMessage request = new HttpRequestMessage(HttpMethod.Post, "https://api.green-api.com/waInstance" + this.IdInstance + "/sendFileByUrl/" + this.apiTokenInstance);
@@ -63,11 +64,11 @@ public class WSP_API
             "}");
 
         request.Content.Headers.ContentType = new MediaTypeHeaderValue("application/json");
-        string message_response = await WSP_API_request(client, request);
+        string message_response = await SendApiRequest(client, request);
         Wsp_JSON online_status = JsonConvert.DeserializeObject<Wsp_JSON>(message_response.ToString());
     }
 
-    public async Task<string> WSP_API_request(HttpClient client, HttpRequestMessage request)
+    public async Task<string> SendApiRequest(HttpClient client, HttpRequestMessage request)
     {
         string responseBody = "";
         try
@@ -85,7 +86,7 @@ public class WSP_API
         return responseBody;
     }
 
-    public string URL_replace(string url_response)
+    public string ReplaceURL(string url_response)
     {
         string mssg = url_response.Replace("{\"urlFile\":\"", "").Replace("\"}", "");
 
